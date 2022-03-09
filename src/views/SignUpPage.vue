@@ -45,10 +45,10 @@ export default {
                 return;
             }
             try {
-                await this.$store.dispatch('auth/signup', {
+                await this.$store.dispatch('auth/signUp', {
                     username: this.username,
                     password: this.password,
-                    emai: this.email
+                    email: this.email
                 })
 
                 this.confirmPassword = true;
@@ -67,7 +67,7 @@ export default {
                     code: this.code
                 })
 
-                await this.$store.dispatch('authlogin', {
+                await this.$store.dispatch('auth/login', {
                     username: this.username,
                     password: this.password
                 })

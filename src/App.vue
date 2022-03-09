@@ -9,10 +9,17 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 import Nav from './components/Nav.vue'
 
 export default {
-  components: { Nav }
+  mounted() {
+    this.authAction()
+  },
+  components: { Nav },
+  methods: {
+    ...mapActions('auth', ['authAction'])
+  }
 }
 </script>
 
