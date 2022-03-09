@@ -1,12 +1,14 @@
 <template>
   <div class="home">
-    <h1 class="text-2xl bg-slate-400">this is home</h1>
+    <Login />
   </div>
 </template>
 
 <script>
+import Login from '@/components/Login.vue'
+
 export default {
   name: 'HomeView',
-  components: {}
+  components: { Login, }
 }
 </script>
