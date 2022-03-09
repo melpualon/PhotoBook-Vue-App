@@ -35,6 +35,8 @@ export default {
                     username: this.username,
                     password: this.password
                 });
+                this.$router.push('/albums')
+
             } catch (error) {
                 this.error = error
             }
